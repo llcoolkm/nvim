@@ -421,7 +421,7 @@ require('lazy').setup({
   require 'plugins.chatgpt',
   require 'plugins.auto-session',
   require 'plugins.obsidian',
-  -- require 'plugins.cmp',
+  require 'plugins.cmp',
   -- require 'plugins.copilot',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
