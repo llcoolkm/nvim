@@ -2,7 +2,7 @@
 
 ## Introduction
 
-My NeoVIM configuration. Intially based on Kickstart.nvim.
+My NeoVIM configuration. Intially based on Kickstart.nvim and broken out into separate files.
 
 ## Installation
 
