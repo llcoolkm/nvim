@@ -357,17 +357,12 @@ require('lazy').setup({
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('lualine').setup()
-    end,
   },
 
   { -- Nvimtree (File Explorer)
     'nvim-tree/nvim-tree.lua',
     lazy = true,
-    dependencies = {
-      'nvim-tree/nvim-web-devicons',
-    },
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
 
   { -- FlyBuf (Buffer list in a float)
@@ -421,7 +416,7 @@ require('lazy').setup({
   require 'plugins.chatgpt',
   require 'plugins.auto-session',
   require 'plugins.obsidian',
-  require 'plugins.cmp',
+  -- require 'plugins.cmp',
   -- require 'plugins.copilot',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -432,7 +427,8 @@ require('lazy').setup({
   -- Or use telescope!
   -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
   -- you can continue same window with `<space>sr` which resumes last telescope search
-}, {
+},
+{
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
