@@ -1,16 +1,20 @@
+vim.o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
+
 return {
   'rmagatti/auto-session',
   config = function()
     require('auto-session').setup {
+
+      auto_restore_last_session = true,
       log_level = 'error',
-      auto_session_suppress_dirs = { '~/' },
-      auto_session_enable_last_session = false,
       session_lens = {
         buftypes_to_ignore = {},
         load_on_setup = true,
-        theme_conf = { border = true },
         previewer = false,
+        theme_conf = { border = true },
       },
+      suppressed_dirs = { '~/' },
+
       vim.keymap.set('n', '<leader>fs', require('auto-session.session-lens').search_session, { noremap = true }),
     }
   end,
