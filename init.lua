@@ -92,6 +92,9 @@ vim.api.nvim_create_autocmd('BufRead', {
   end,
 })
 
+-- Augment workspace folders
+vim.g.augment_workspace_folders = {'~/git/cine2cal'}
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'

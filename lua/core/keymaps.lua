@@ -53,4 +53,10 @@ return {
   map('n', '<Leader>g', ':Gitsigns toggle_signs<Enter>', { desc = 'Toggle Gitsigns' }),
   map('n', '<Leader>l', ':set list!<Enter>', { desc = 'Toggle list mode' }),
   map('n', '<Leader>p', ':set paste!<Enter>', { desc = 'Toggle paste mode' }),
+
+  -- Augment Code AI
+  map('n', '<leader>ac', ':Augment chat<CR>', { desc = 'Augment chat' }),
+  map('n', '<leader>an', ':Augment chat-new<CR>', { desc = 'Augment chat-new' }),
+  map('n', '<leader>as', ':Augment status<CR>', { desc = 'Augment status' }),
+  map('n', '<leader>at', ':Augment chat-toggle<CR>', { desc = 'Augment chat-toggle' }),
 }
