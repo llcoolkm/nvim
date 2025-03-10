@@ -5,7 +5,7 @@ return {
   config = function()
     require('auto-session').setup {
 
-      auto_restore_last_session = true,
+      auto_restore_last_session = false,
       log_level = 'error',
       session_lens = {
         buftypes_to_ignore = {},
