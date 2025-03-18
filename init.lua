@@ -365,6 +365,7 @@ require('lazy').setup({
   -- require 'plugins.indent_line',
   -- require 'plugins.lint',
   require 'plugins.telescope',
+  -- require 'plugins.avante',
   -- require 'plugins.autopairs',
   require 'plugins.lsp-config',
   require 'plugins.neo-tree',
