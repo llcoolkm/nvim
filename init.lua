@@ -61,6 +61,19 @@ vim.opt.inccommand = 'split' -- Preview substitutions live, as you type!
 vim.opt.cursorline = true -- Show which line your cursor is on
 vim.opt.scrolloff = 2 -- Minimal number of screen lines to keep above and below the cursor.
 
+-- diagnostics
+vim.diagnostic.config {
+  -- Use the default configuration
+  virtual_text = true,
+  virtual_lines = true,
+
+  -- Alternatively, customize specific options
+  -- virtual_lines = {
+  --  -- Only show virtual line diagnostics for the current cursor line
+  --  current_line = true,
+  -- },
+}
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
