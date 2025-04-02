@@ -65,7 +65,7 @@ vim.opt.scrolloff = 2 -- Minimal number of screen lines to keep above and below 
 vim.diagnostic.config {
   -- Use the default configuration
   virtual_text = true,
-  virtual_lines = true,
+  virtual_lines = false,
 
   -- Alternatively, customize specific options
   -- virtual_lines = {
@@ -106,7 +106,7 @@ vim.api.nvim_create_autocmd('BufRead', {
 })
 
 -- Augment workspace folders
-vim.g.augment_workspace_folders = { '~/git/cine2cal' }
+vim.g.augment_workspace_folders = { '~/.config/nvim', '~/git/cine2cal', '~/git/fsgrowth', '~/git/daws', '~/git/heartbeat' }
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
