@@ -2,3 +2,4 @@ tags
 test.sh
 .luarc.json
 spell/
+lazy-lock.json
