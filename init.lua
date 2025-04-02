@@ -61,6 +61,19 @@ vim.opt.inccommand = 'split' -- Preview substitutions live, as you type!
 vim.opt.cursorline = true -- Show which line your cursor is on
 vim.opt.scrolloff = 2 -- Minimal number of screen lines to keep above and below the cursor.
 
+-- diagnostics
+vim.diagnostic.config {
+  -- Use the default configuration
+  virtual_text = true,
+  virtual_lines = false,
+
+  -- Alternatively, customize specific options
+  -- virtual_lines = {
+  --  -- Only show virtual line diagnostics for the current cursor line
+  --  current_line = true,
+  -- },
+}
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -93,7 +106,9 @@ vim.api.nvim_create_autocmd('BufRead', {
 })
 
 -- Augment workspace folders
+
 vim.g.augment_workspace_folders = {
+  -- sg
   '~/git/cine2cal',
   '~/git/terraform-aws-alb',
   '~/git/terraform-aws-mssqlec2',
@@ -103,6 +118,12 @@ vim.g.augment_workspace_folders = {
   '~/git/gds-infra',
   '~/git/dfe-infra',
   '~/git/platform-infra',
+  -- daptop
+  '~/.config/nvim',
+  '~/git/cine2cal',
+  '~/git/fsgrowth',
+  '~/git/daws',
+  '~/git/heartbeat'
 }
 
 -- [[ Install `lazy.nvim` plugin manager ]]
