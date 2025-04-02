@@ -93,7 +93,17 @@ vim.api.nvim_create_autocmd('BufRead', {
 })
 
 -- Augment workspace folders
-vim.g.augment_workspace_folders = { '~/git/cine2cal' }
+vim.g.augment_workspace_folders = {
+  '~/git/cine2cal',
+  '~/git/terraform-aws-alb',
+  '~/git/terraform-aws-mssqlec2',
+  '~/git/terraform-aws-graylog',
+  '~/git/terraform-aws-route53',
+  '~/git/ensemble-infra',
+  '~/git/gds-infra',
+  '~/git/dfe-infra',
+  '~/git/platform-infra',
+}
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -380,7 +390,6 @@ require('lazy').setup({
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
-  --
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!

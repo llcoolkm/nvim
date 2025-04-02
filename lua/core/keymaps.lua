@@ -54,6 +54,9 @@ return {
   map('n', '<Leader>l', ':set list!<Enter>', { desc = 'Toggle list mode' }),
   map('n', '<Leader>p', ':set paste!<Enter>', { desc = 'Toggle paste mode' }),
 
+  -- Remove trailing carriage returns (comes from git show normally)
+  map('n', '<leader>cr', ':%s/\\r\\+$//e<CR>', { desc = 'Remove Windows carriage returns ^M' }),
+
   -- Augment Code AI
   map('n', '<leader>ac', ':Augment chat<CR>', { desc = 'Augment chat' }),
   map('n', '<leader>an', ':Augment chat-new<CR>', { desc = 'Augment chat-new' }),
